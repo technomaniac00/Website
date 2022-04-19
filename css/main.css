@@ -1,0 +1,145 @@
+body{
+    font-family: "Montserrat";
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(75, 75, 75);
+}
+
+.home{
+    border: 2px solid;
+}
+
+.navbar{
+    padding: 0px;
+}
+
+.my-bg-image{
+    width: 100%; 
+    z-index: -1;
+}
+
+.nav-item{
+    margin-left: 12%;
+}
+
+.about-me{
+    background-color: blue;
+    border: 2px solid;
+}
+
+.work{
+    background-color: green;
+    border: 2px solid;
+}
+
+
+
+.reviews{
+    background-color: orange;
+    border: 2px solid;
+    padding: 7% 15%;
+    text-align: center;
+}
+
+.review-text{
+    width: 80%;
+    margin: auto;
+    margin-bottom: 5%;
+}
+
+.reviewer{
+    width: 40%;
+    margin: auto;
+}
+
+.round-image{
+    width: 5rem;
+    border-radius: 100%;
+    margin-bottom: 2%;
+}
+
+.rev-details{
+    width: 100%;
+}
+
+h4{
+    font-weight: bold;
+}
+
+.contact-me{
+    background-color: rgb(108, 121, 90);
+    border: 2px solid;
+}
+
+.row{
+    margin: 0px;
+}
+
+.info{
+    display: inline-block;
+    padding: 7%;
+    color: azure;
+}
+
+.form-con{
+    display: inline-block;
+    padding: 7%;
+}
+
+.form-contact{
+    color: azure;
+    width: 100%;
+}
+
+.col-auto{
+    text-align: center;
+}
+
+.submit-btn{
+    margin-top: 10%;
+    margin-right: 20%;
+    background-color: rgb(194, 226, 202);
+}
+
+.reset-btn{
+    margin-top: 10%;
+    background-color: rgb(194, 226, 202);
+}
+
+.footer{
+    background-color: white;
+    border: 2px solid;
+    text-align: center;
+}
+
+.list-inline{
+    margin-top: 15px;
+    text-align: bottom;
+}
+
+.list-inline-item a{
+    color: grey;
+    margin-right: 2rem;
+    font-size: 100%;
+}
+
+
+#linkedin:hover{
+    color: #0077b5;
+    text-decoration: none;
+}
+
+#facebook:hover{
+    color: #4267B2;
+    text-decoration: none;
+}
+
+#instagram:hover{
+    color: #E1306C;
+    text-decoration: none;
+}
+
+
+.copyright{
+    display: inline-block;
+}
