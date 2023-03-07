@@ -46,6 +46,7 @@ body{
 
 .navbar{
     padding: 0px;
+    background-color: #222831;
 }
 
 
@@ -54,12 +55,84 @@ body{
     font-size: larger;
 }
 
+.navbar-dark .navbar-nav .nav-link {
+  color: #EEEEEE;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #00ADB5
+}
+
 /* ----------------------My Timeline---------------------------- */
 .about-me{
-    background-color: #EDF1D6;
+    background-color: #EEEEEE;
+    padding: 0% 15%;
     overflow-x: hidden;
 }
 
+main {
+  min-width: 300px;
+  max-width: 500px;
+  margin: auto;
+}
+
+.timeline {
+  font-size: 1em;
+  line-height: 1.75em;
+  border-top: 3px solid;
+  border-image: linear-gradient(to right, #393E46 0%, #00ADB5 100%);
+  border-image-slice: 1;
+  border-width: 3px;
+  margin: 0;
+  padding: 3rem;
+  counter-increment: section;
+  position: relative;
+  color: #34435E;
+  width: 90%;
+  margin: auto;
+  &:before {
+    content: counter(section);
+    position: absolute;
+    border-radius: 50%;
+    padding: 10px;
+    height: 1.25rem;
+    width: 1.25rem;
+    background-color: $#34435E;
+    text-align: center;
+    line-height: 1.25em;
+    color: #ffffff;
+    font-size: 1em;
+  }
+}
+
+.timeline:nth-child(odd) {
+  border-right: 3px solid;
+  text-align: right; 
+  padding-left: 0;
+  
+  &:before {
+    margin-left: -20px;
+  }
+}
+
+.timeline:nth-child(even) {
+  border-left: 3px solid;
+  padding-right: 0;
+  
+  &:before {
+    margin-right: -20px;
+  }
+}
+
+.timeline:first-child {
+  border-top: 0;
+  border-top-right-radius:0;
+  border-top-left-radius:0;
+}
+.timeline:last-child {
+  border-bottom-right-radius:0;
+  border-bottom-left-radius:0;
+}
 
 /* -----------------------My previous works----------------------- */
 .work{
@@ -210,6 +283,7 @@ article {
 .reviews{
     background-color: #EEEEEE;
     padding: 7% 15%;
+    color: #222831;
 }
 
 .review-text{
