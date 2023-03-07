@@ -5,51 +5,130 @@ body{
     background-color: rgb(75, 75, 75);
 }
 
+/* ------------------Basic CSS------------------ */
+
+/* color 1 */
+.color-azure{
+    color: azure;
+}
+
+/* color 2 */
+.color-gr{
+    background-color: rgb(108, 121, 90);
+}
+
+/* adjusting display */
+.disp-inlb-pad-7{
+    display: inline-block;
+    padding: 7%;
+}
+
+/* align center */
+.align-center{
+    text-align: center;
+}
+
+/* setting width */
+.wid-100{
+    width: 100%; 
+}
+
+/* margin auto */
+.margin-auto{
+    margin: auto;
+}
+
+/* font weights */
+.font-mid{
+    font-weight: 600;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.font-bolder{
+    font-weight: bolder;
+}
+
+/* ------------------Landing page home screen------------------ */
 .home{
-    border: 2px solid;
 }
 
 .navbar{
     padding: 0px;
 }
 
-.my-bg-image{
-    width: 100%; 
-    z-index: -1;
-}
 
 .nav-item{
-    margin-left: 12%;
+    margin-left: 16%;
+    font-size: larger;
 }
 
+/* ----------------------My Timeline---------------------------- */
 .about-me{
-    background-color: blue;
-    border: 2px solid;
+    background-color: #f5f4f4;
+    overflow-x: hidden;
 }
 
+
+/* -----------------------My previous works----------------------- */
 .work{
-    background-color: green;
-    border: 2px solid;
+    padding: 7% 5% ;
+    margin: center;
+    color: rgb(203, 218, 218);
+}
+
+.work-heading{
+    margin-bottom: 10%;
+    font-size: xxx-large;
+}
+
+.cards-container{
+    background-color: rgb(4, 0, 255);
+    text-align: center;
+}
+
+.card{
+    /* background-color: rgb(255, 253, 240); */
+    border-radius: 4%;
+    display: inline-block;
+    height: 40rem;
+    width: 30rem;
 }
 
 
+.card-detail{
+    margin-top: 12rem;
+}
 
+.icon{
+    width: 8rem;
+    margin-bottom: 6%;
+}
+
+.label-card{
+    font-size: 4rem;
+    color: #30afe1;
+}
+
+/* --------------------------Reviews--------------------------- */
 .reviews{
-    background-color: orange;
-    border: 2px solid;
+    background-color: #f5f4f4;
     padding: 7% 15%;
-    text-align: center;
 }
 
 .review-text{
     width: 80%;
-    margin: auto;
     margin-bottom: 5%;
+}
+
+.review-container{
+    padding: 8rem 0rem;
 }
 
 .reviewer{
     width: 40%;
-    margin: auto;
 }
 
 .round-image{
@@ -58,57 +137,76 @@ body{
     margin-bottom: 2%;
 }
 
-.rev-details{
-    width: 100%;
+/* cubes animation */
+.cube {
+    position: relative;
+    top: 10vh;
+    left: 5vw;
+    width: 12px;
+    height: 12px;
+    border: solid 1px rgb(155, 142, 142);
+    transform-origin: top left;
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    animation: cube 14s ease-in forwards infinite;
+}
+.cube:nth-child(2n) {
+    border-color: rgb(155, 142, 142);
+}
+.cube:nth-child(2) {
+    animation-delay: 8s;
+    left: 15vw;
+    top: 40vh;
+}
+.cube:nth-child(3) {
+    animation-delay: 6s;
+    left: 75vw;
+    top: 50vh;
+}
+.cube:nth-child(4) {
+    animation-delay: 10s;
+    left: 50vw;
+    top: 5vh;
+}
+.cube:nth-child(5) {
+    animation-delay: 16s;
+    left: 78vw;
+    top: 10vh;
 }
 
-h4{
-    font-weight: bold;
+@keyframes cube {
+    from {
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+   }
+    to {
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+   }
 }
 
-.contact-me{
-    background-color: rgb(108, 121, 90);
-    border: 2px solid;
+
+/* buttons */
+.submit-btn{
+    margin-top: 10%;
+    margin-right: 20%;
+    background-color: rgb(232, 241, 234);
+}
+
+.reset-btn{
+    margin-top: 10%;
+    background-color: rgb(238, 227, 227);
 }
 
 .row{
     margin: 0px;
 }
 
-.info{
-    display: inline-block;
-    padding: 7%;
-    color: azure;
-}
+/* -----------------FOOTER------------------- */
 
-.form-con{
-    display: inline-block;
-    padding: 7%;
-}
-
-.form-contact{
-    color: azure;
-    width: 100%;
-}
-
-.col-auto{
-    text-align: center;
-}
-
-.submit-btn{
-    margin-top: 10%;
-    margin-right: 20%;
-    background-color: rgb(194, 226, 202);
-}
-
-.reset-btn{
-    margin-top: 10%;
-    background-color: rgb(194, 226, 202);
-}
-
+/* main */
 .footer{
-    background-color: white;
-    border: 2px solid;
+    background-color: #f5f4f4;
+    border: 2px solid azure;
     text-align: center;
 }
 
@@ -123,7 +221,7 @@ h4{
     font-size: 100%;
 }
 
-
+/* socials */
 #linkedin:hover{
     color: #0077b5;
     text-decoration: none;
@@ -139,7 +237,7 @@ h4{
     text-decoration: none;
 }
 
-
+/* copyright */
 .copyright{
     display: inline-block;
 }

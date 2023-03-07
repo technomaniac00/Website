@@ -41,44 +41,78 @@
           </button> 
           <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
               <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="" >Home</a>
+                <li class="nav-item font-bolder">
+                    <a class="nav-link" href="">Home</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item font-bolder">
                     <a class="nav-link" href="">About</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item font-bolder">
                     <a class="nav-link" href="">Work</a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item font-bolder">
                     <a class="nav-link" href="">Contact</a>
                 </li>
              </ul>
           </div>
         </nav> 
-        <img class="my-bg-image" src="media/My_photo.png" alt="">
+      <img class="my-bg-image wid-100" src="media/My_photo.png" alt="">
     </section>
 
 
     <!-- section with the complete timeline -->
-    <section class="about-me">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quibusdam, molestias animi tempore sit mollitia officia fuga corporis veritatis ut reiciendis sint ipsam, dignissimos laudantium, distinctio facilis beatae illum earum!
-    Rerum exercitationem ab aperiam mollitia enim accusamus repellendus officia, cum maiores velit necessitatibus! Ea consequatur labore obcaecati optio deleniti laborum qui. Tenetur sapiente minus ipsam ab voluptatum laboriosam quidem similique.</section>
+    <section class="about-me">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quibusdam, molestias animi tempore sit mollitia officia fuga corporis veritatis ut reiciendis sint ipsam, dignissimos laudantium, distinctio facilis beatae illum earum!
+      Rerum exercitationem ab aperiam mollitia enim accusamus repellendus officia, cum maiores velit necessitatibus! Ea consequatur labore obcaecati optio deleniti laborum qui. Tenetur sapiente minus ipsam ab voluptatum laboriosam quidem similique.
+    </section>
 
     <!-- section with my previous works -->
-    <section class="work">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quibusdam, molestias animi tempore sit mollitia officia fuga corporis veritatis ut reiciendis sint ipsam, dignissimos laudantium, distinctio facilis beatae illum earum!
-      Rerum exercitationem ab aperiam mollitia enim accusamus repellendus officia, cum maiores velit necessitatibus! Ea consequatur labore obcaecati optio deleniti laborum qui. Tenetur sapiente minus ipsam ab voluptatum laboriosam quidem similique.</section>
+    <section class="work color-gr">
+      <h2 class="work-heading align-center font-bolder">Previous Works</h2>
+      <div class="row container-fluid mc-auto" >
+        <div class="col-lg-4 align-center">
+          <div class="card">
+              <div class="card-detail align-center">
+                <img src="media/photo.gif" class="icon">
+                <h3 class="label-card font-mid">Photos</h3>
+              </div>
+          </div>
+        </div>
+        <div class="col-lg-4 align-center">
+          <div class="card">
+            <div class="card-detail align-center">
+              <img src="media/illustration.gif" class="icon">
+              <h3 class="label-card font-mid">Illustrations</h3>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 align-center">
+          <div class="card">
+            <div class="card-detail align-center">
+              <img src="media/videoediting.gif" class="icon">
+              <h3 class="label-card font-mid">Videos</h3>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
 
 
     <!-- section for the reviews and feedback given by clients -->
-    <section class="reviews">
+    <section class="reviews align-center">
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
+      <div class="cube"></div>
       <div class="review-container">
-        <h3 class="review-text">
+        <h3 class="review-text margin-auto">
           <strong>"</strong> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corporis dolore quidem aliquam laborum ex adipisicing elit. Corporis dolore quidem aliquam laborum exadipisicing elit. Corporis dolore quidem aliquam laborum ex. <strong>"</strong>
         </h3>
-        <div class="reviewer">
+        <div class="reviewer margin-auto">
           <img class="round-image" src="media/abc.png" alt="" style="text-align: center;">
-          <div class="rev-details">
-            <h4>Aditya Singh</h4>
+          <div class="wid-100">
+            <h4 class="font-bold">Aditya Singh</h4>
             <p>Basically he is a genius and one of a kind</p>
           </div>
         </div>
@@ -87,11 +121,11 @@
 
 
     <!-- form for sending a request to me -->
-    <section class="contact-me">
+    <section class="contact-me color-gr">
       <div class="row">
 
         <!-- left text for the contact form -->
-        <div class="col-lg-6 info" style="margin: auto;">
+        <div class="col-lg-6 disp-inlb-pad-7 color-azure" style="margin: auto;">
           <h1 style="font-weight: bold;">Please drop a mail in case of any query.</h1>
           <p style="font-size: large;">Feel free to describe your query in detail. I would be happy to address the concern and reach out to you within 1-2 business days</p>
 
@@ -101,8 +135,8 @@
         </div>
 
         <!-- form to send the mail -->
-        <div class="col-lg-6 form-con">
-          <form class="form-contact" action="" method="post">
+        <div class="col-lg-6 disp-inlb-pad-7">
+          <form class="color-azure wid-100" action="" method="post">
             <div class="form-group">
               <label for="Name">Name</label>
               <input class="form-control" type="text" placeholder="full name" name="fullname">
@@ -151,7 +185,7 @@
                 I agree to receive a responce on the same mail address 
               </label>
             </div>
-            <div class="col-auto">
+            <div class="align-center">
               <button type="submit" class="btn btn-outline-success submit-btn">Submit</button>
               <button type="reset" class="btn btn-outline-danger reset-btn">Reset</button>
             </div>
@@ -165,15 +199,15 @@
     <section class="footer">
       <footer>
         <ul class="list-inline">
-          <li class="list-inline-item"><a href=""  id="linkedin"><img src="media/linkedin.png" alt="" style="width: 1.1rem; margin-right: 2px;">
+          <li class="list-inline-item"><a href="https://www.linkedin.com/in/aditya-singh-13a23b85/"  id="linkedin"><img src="media/linkedin.png" alt="" style="width: 1.1rem; margin-right: 2px;">
           LinkedIn</a>
           </li>
-          <li class="list-inline-item"><a href=""  id="facebook"><img src="media/facebook.png" alt="" style="width: 1.1rem; margin-right: 4px;">Facebook</a>
+          <li class="list-inline-item"><a href="https://www.facebook.com/ADITYA289/"  id="facebook"><img src="media/facebook.png" alt="" style="width: 1.1rem; margin-right: 4px;">Facebook</a>
           </li>
-          <li class="list-inline-item"><a href=""  id="instagram"><img src="media/instagram.png" alt="" style="width: 1.1rem; margin-right: 4px;">Instagram</a>
+          <li class="list-inline-item"><a href="https://www.instagram.com/aditya.singh_28/"  id="instagram"><img src="media/instagram.png" alt="" style="width: 1.1rem; margin-right: 4px;">Instagram</a>
           </li>
         </ul>
-        <p class="copyright">&#169; All rights reserverd 2022</p>
+        <p class="copyright">&#169; All rights reserved 2022</p>
         <p style=" font-size: xx-small;">Made with <i class="fa-solid fa-heart" style="color: rgb(240, 81, 81);"></i> in India</p>
       </footer>
     </section>
