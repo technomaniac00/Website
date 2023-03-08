@@ -3,7 +3,11 @@ body{
     padding: 7% 15%;
 }
 
+img{
+    margin-bottom: 2rem;
+}
+
 h1,h3{
     color: #EEEEEE;
-    margin-bottom: 2rem;
+    margin-top: 2rem;
 }
