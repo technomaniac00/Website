@@ -136,7 +136,7 @@ main {
   width: 90%;
   margin: auto;
   &:before {
-    content: counter(section);
+    /*content: counter(section);*/
     position: absolute;
     border-radius: 50%;
     padding: 10px;
